@@ -1,6 +1,8 @@
 # code your #valid_move? method here
 def valid_move?
-  if board[position] == (0...8) && position_taken? == false
+  if board[position] == (0...8)
+    true
+  elsif position_taken? == false
     true
   else
     false
